@@ -1,22 +1,14 @@
 {
-  "compileOnSave": true,
   "compilerOptions": {
-    "target": "es6",
+    "outDir": "./lib",
+    "target": "es5",
+    "lib": ["es6", "dom"],
     "module": "commonjs",
+    "moduleResolution": "node",
     "sourceMap": true,
-    "outDir": "./dist",
-    "types": [
-      "babylonjs",
-      "babylonjs-gui",
-      "babylonjs-materials",
-      "node"
-    ]
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
   },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.spec.js"
-  ]
+  "include": ["src/**/*.ts"]
 }
